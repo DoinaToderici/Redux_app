@@ -9,7 +9,14 @@ export default function postReducer(state = initialState, action) {
     case ADD_POST:
       return [...state, action.payload];
     case PUT_POST:
-      return [...state, action.payload];
+      const newState = state.map((item) => {
+        if (item.id === action.payload.id) {
+          return action.payload;
+        } else {
+          return item;
+        }
+      });
+      return newState;
 
     default:
       return state;
