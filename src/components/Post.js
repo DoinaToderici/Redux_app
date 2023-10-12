@@ -60,7 +60,7 @@ const Post = ({ post }) => {
       />
 
       {editToggle ? (
-        <form>
+        <form onSubmit={(e) => handleValidate(e)}>
           <textarea
             autoFocus={true}
             value={postToEditContent.content}
@@ -68,11 +68,7 @@ const Post = ({ post }) => {
             ref={textareaRef}
             onChange={handleChange}
           ></textarea>
-          <input
-            type="submit"
-            value="Valider modification"
-            onClick={(e) => handleValidate(e)}
-          />
+          <input type="submit" value="Valider modification" />
         </form>
       ) : (
         <p>{post.content}</p>

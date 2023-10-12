@@ -34,7 +34,7 @@ const PostForm = () => {
 
   return (
     <div className="form-container">
-      <form>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <input
           type="text"
           placeholder="Titre du poste"
@@ -48,7 +48,7 @@ const PostForm = () => {
           value={newPost.content}
           onChange={handleChange}
         ></textarea>
-        <input type="submit" value="Envoyer" onClick={(e) => handleSubmit(e)} />
+        <input type="submit" value="Envoyer" />
       </form>
     </div>
   );
