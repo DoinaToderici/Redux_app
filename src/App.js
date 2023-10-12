@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import PostForm from "./components/PostForm";
+import User from "./components/User";
+import Post from "./components/Post";
+import { useDispatch, useSelector } from "react-redux";
+import { getPosts } from "./actions/post.action";
+import { isEmpty } from "./components/Utils";
+import { getUser } from "./actions/userAction";
 
-function App() {
+const App = () => {
+  // Lancer la fonction getPosts()
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getPosts());
+    dispatch(getUser());
+  }, []);
+
+  // Recuperer les datas
+  const posts = useSelector((state) => state.postReducer);
+  const users = useSelector((state) => state.userReducer);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Extreme</h1>
+      <PostForm />
+      <div className="content">
+        <div className="post-container">
+          {!isEmpty(posts) &&
+            posts.map((post, index) => {
+              return <Post post={post} key={index} />;
+            })}
+        </div>
+        {!isEmpty(users) &&
+          users.map((user, index) => {
+            return <User user={user} key={index} />;
+          })}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
