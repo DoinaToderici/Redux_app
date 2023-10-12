@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import Like from "./Like";
 import { isEmpty } from "./Utils";
 import { useDispatch, useSelector } from "react-redux";
-import { putPost } from "../actions/post.action";
+import { deletePost, putPost } from "../actions/post.action";
 
 const Post = ({ post }) => {
   const [editToggle, setEditToggle] = useState(false);
@@ -29,6 +29,10 @@ const Post = ({ post }) => {
     setEditToggle(!editToggle);
   };
 
+  const handleDelete = (idPostToDelete) => {
+    dispatch(deletePost(idPostToDelete));
+  };
+
   return (
     <div className="post">
       {!isEmpty(user) && user[0].pseudo === post.author && (
@@ -40,7 +44,11 @@ const Post = ({ post }) => {
               handleEdit(post);
             }}
           />
-          <img src="./icons/delete.svg" alt="delete" />
+          <img
+            src="./icons/delete.svg"
+            alt="delete"
+            onClick={() => handleDelete(post.id)}
+          />
         </div>
       )}
 

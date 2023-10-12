@@ -3,6 +3,7 @@ import axios from "axios";
 export const GET_POSTS = "GET_POSTS";
 export const ADD_POST = "ADD_POST";
 export const PUT_POST = "PUT_POST";
+export const DELETE_POST = "DELETE_POST";
 
 export const getPosts = () => {
   return (dispatch) => {
@@ -28,6 +29,15 @@ export const putPost = (idPostToModify, updatedPostData) => {
       .put(`http://localhost:3000/posts/${idPostToModify}`, updatedPostData)
       .then(function (res) {
         dispatch({ type: PUT_POST, payload: res.data });
+      });
+  };
+};
+export const deletePost = (idPostToDelete) => {
+  return (dispatch) => {
+    return axios
+      .delete(`http://localhost:3000/posts/${idPostToDelete}`)
+      .then((res) => {
+        dispatch({ type: DELETE_POST, payload: idPostToDelete });
       });
   };
 };
