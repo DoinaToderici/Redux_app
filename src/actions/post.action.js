@@ -4,6 +4,7 @@ export const GET_POSTS = "GET_POSTS";
 export const ADD_POST = "ADD_POST";
 export const PUT_POST = "PUT_POST";
 export const DELETE_POST = "DELETE_POST";
+export const ADD_POST_LIKE = "ADD_POST_LIKE";
 
 export const getPosts = () => {
   return (dispatch) => {
@@ -32,12 +33,23 @@ export const putPost = (idPostToModify, updatedPostData) => {
       });
   };
 };
+
 export const deletePost = (idPostToDelete) => {
   return (dispatch) => {
     return axios
       .delete(`http://localhost:3000/posts/${idPostToDelete}`)
       .then((res) => {
         dispatch({ type: DELETE_POST, payload: idPostToDelete });
+      });
+  };
+};
+
+export const addPostLike = (newLikedPost) => {
+  return (dispatch) => {
+    return axios
+      .put(`http://localhost:3000/posts/${newLikedPost.id}`, newLikedPost)
+      .then(function (res) {
+        dispatch({ type: ADD_POST_LIKE, payload: newLikedPost });
       });
   };
 };

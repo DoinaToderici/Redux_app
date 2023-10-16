@@ -5,14 +5,14 @@ import Post from "./components/Post";
 import { useDispatch, useSelector } from "react-redux";
 import { getPosts } from "./actions/post.action";
 import { isEmpty } from "./components/Utils";
-import { getUser } from "./actions/userAction";
+import { getUsers } from "./actions/userAction";
 
 const App = () => {
   // Lancer la fonction getPosts()
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getPosts());
-    dispatch(getUser());
+    dispatch(getUsers());
   }, []);
 
   // Recuperer les datas

@@ -2,6 +2,7 @@ import {
   ADD_POST,
   DELETE_POST,
   GET_POSTS,
+  ADD_POST_LIKE,
   PUT_POST,
 } from "../actions/post.action";
 
@@ -12,7 +13,7 @@ export default function postReducer(state = initialState, action) {
     case GET_POSTS:
       return action.payload;
     case ADD_POST:
-      return [...state, action.payload];
+      return [action.payload, ...state];
     case PUT_POST:
       const newState = state.map((item) => {
         if (item.id === action.payload.id) {
@@ -22,10 +23,14 @@ export default function postReducer(state = initialState, action) {
         }
       });
       return newState;
-
     case DELETE_POST:
       return state.filter((item) => item.id !== action.payload);
-
+    case ADD_POST_LIKE:
+      return state.map((item) => {
+        if (item.id === action.payload.id) {
+          return { ...item, likes: action.payload.likes };
+        } else return item;
+      });
     default:
       return state;
   }
