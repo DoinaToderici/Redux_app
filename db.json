@@ -18,23 +18,29 @@
       "title": "dsdsds",
       "author": "user_42",
       "content": "sdsds",
-      "likes": 4,
+      "likes": 23,
       "id": "27252998525425024130221186"
     },
     {
       "title": "cdd",
       "author": "user_42",
       "content": "ddd",
-      "likes": 0,
+      "likes": 3,
       "id": "2181413418419326161684688"
     }
   ],
   "users": [
     {
-      "pseudo": "user_42",
-      "likes": 11,
+      "pseudo": "user_1",
+      "likes": 33,
       "age": 30,
       "id": 1
+    },
+    {
+      "pseudo": "user_2",
+      "likes": 0,
+      "age": 25,
+      "id": 2
     }
   ]
 }

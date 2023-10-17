@@ -18,7 +18,6 @@ const App = () => {
   // Recuperer les datas
   const posts = useSelector((state) => state.postReducer);
   const users = useSelector((state) => state.userReducer);
-
   return (
     <div>
       <h1>Extreme</h1>
