@@ -19,19 +19,21 @@ const App = () => {
   const posts = useSelector((state) => state.postReducer);
   const user = useSelector((state) => state.userReducer);
   return (
-    <div className="text-violet">
+    <div className="container">
       <PostForm />
-      <div className="content">
-        <div className="post-container">
+      <div className=" grid grid-cols-3 gap-4">
+        <div className="post-container col-span-2">
           {!isEmpty(posts) &&
             posts.map((post, index) => {
               return <Post post={post} key={index} />;
             })}
         </div>
-        {!isEmpty(user) &&
-          user.map((user, index) => {
-            return <User user={user} key={index} />;
-          })}
+        <div className="user-container">
+          {!isEmpty(user) &&
+            user.map((user, index) => {
+              return <User user={user} key={index} />;
+            })}
+        </div>
       </div>
     </div>
   );

@@ -4,154 +4,21 @@
       "title": "Lorem ipsum dolor sit amet dolor sit amet",
       "author": "Samia",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Recusandae quaerat vitae fugiat mollitia blanditiis, temporibus eum! Ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Recusandae quaerat vitae fugiat mollitia blanditiis, temporibus eum! Ipsum?",
-      "likes": 83,
+      "likes": 85,
       "id": "2"
     },
     {
       "title": "Lorem ipsum dolor",
       "author": "Denis",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Recusandae quaerat vitae fugiat mollitia blanditiis, temporibus eum! Ipsum?",
-      "likes": 107,
+      "likes": 113,
       "id": "3"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "103879852636217352141253"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "129684109105121649730107"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "8202893115223108237237"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "153111130194841221142129471"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "19223822611107205174116211239"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "22749100118720280903743"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "117239229233731567675130186"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "167252175615011915918223497"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "15519815712735156458624746"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "207188250125912455101043"
-    },
-    {
-      "title": "post",
-      "author": "user_1",
-      "content": "post",
-      "likes": 34,
-      "id": "242691592548094552313357"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "11095166762312134628185236"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "18582452451472060204106199"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "146220133122108369345115254"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "1731752243010112517117413379"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "76174112123121923157111126"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "1747219323625252961696227"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "16851481872611922221517437"
-    },
-    {
-      "title": "",
-      "author": "user_1",
-      "content": "",
-      "likes": 34,
-      "id": "7680933752651722214765"
     }
   ],
   "user": [
     {
       "pseudo": "user_1",
-      "likes": 34,
+      "likes": 74,
       "age": 30,
       "id": 1
     }

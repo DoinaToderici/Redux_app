@@ -32,7 +32,7 @@ const PostForm = () => {
   };
 
   return (
-    <div className="form-container mb-5">
+    <div className="form-container my-4">
       <h1> Ajouter un nouveau post</h1>
       <form
         onSubmit={(e) => handleSubmit(e)}
@@ -45,6 +45,7 @@ const PostForm = () => {
           name="title"
           value={newPost.title}
           onChange={handleChange}
+          required
           className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
         />
         <textarea
@@ -53,7 +54,8 @@ const PostForm = () => {
           name="content"
           value={newPost.content}
           onChange={handleChange}
-          className="mt-1 px-3 py-2 h-40 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+          required
+          className="mt-1 px-3 py-2 h-35 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
         />
         <input
           type="submit"

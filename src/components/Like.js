@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addPostLike } from "../actions/post.action";
 import { addUserLike } from "../actions/userAction";
+import { PiHandsClappingThin } from "react-icons/pi";
 
 const Like = ({ post }) => {
   const user = useSelector((state) => state.userReducer);
@@ -22,14 +23,14 @@ const Like = ({ post }) => {
   };
 
   return (
-    <div>
-      <img
-        src="./icons/clap.png"
-        className="clap"
-        alt="clap"
+    <div className="flex mr-2">
+      <PiHandsClappingThin
         onClick={() => handleAddLikes(post)}
+        size={20}
+        color="gray-600"
+        className="mr-1 cursor-pointer transition delay-300 duration-300 ease-in-out"
       />
-      <span>{post.likes}</span>
+      <p className="font-mono text-sm text-gray-600	mb-0">{post.likes}</p>
     </div>
   );
 };
