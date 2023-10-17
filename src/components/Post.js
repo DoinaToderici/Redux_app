@@ -34,7 +34,7 @@ const Post = ({ post }) => {
   };
 
   return (
-    <div className="post">
+    <div className="post border-2 border-rose-600 rounded-md ">
       {!isEmpty(user) && user.pseudo === post.author && (
         <div className="edit-delete">
           <img

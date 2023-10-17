@@ -20,9 +20,8 @@ const App = () => {
   const user = useSelector((state) => state.userReducer);
   return (
     <div className="text-violet">
-      <h1>Extreme</h1>
       <PostForm />
-      <div className="content line-through">
+      <div className="content">
         <div className="post-container">
           {!isEmpty(posts) &&
             posts.map((post, index) => {
