@@ -36,7 +36,7 @@ const PostForm = () => {
       <h1> Ajouter un nouveau post</h1>
       <form
         onSubmit={(e) => handleSubmit(e)}
-        className="flex w-50 flex-col gap-2"
+        className="flex lg:w-1/2 flex-col gap-2"
       >
         <input
           label="Username"
@@ -55,7 +55,7 @@ const PostForm = () => {
           value={newPost.content}
           onChange={handleChange}
           required
-          className="mt-1 px-3 py-2 h-35 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+          className="mt-1 px-3 py-2 h-28 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
         />
         <input
           type="submit"

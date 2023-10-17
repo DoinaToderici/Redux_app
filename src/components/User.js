@@ -6,7 +6,7 @@ const User = ({ user }) => {
       <img
         src="./img/bill-gates.png"
         alt="bill gates"
-        className="rounded-full mx-auto mb-2"
+        className="rounded-full mx-auto mb-2 h-24"
       />
       <h3 className="mb-1">{user.pseudo}</h3>
       <p className="mb-1">
