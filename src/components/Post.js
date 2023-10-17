@@ -36,7 +36,7 @@ const Post = ({ post }) => {
   };
 
   return (
-    <div className="post border-2 border-rose-600 rounded-md p-3 mb-3 shadow-lg">
+    <div className="post border-2 border-rose-600 rounded-md p-4 mb-4 shadow-lg">
       <img
         src="https://picsum.photos/1500/400"
         className="post-img"

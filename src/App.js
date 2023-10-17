@@ -21,8 +21,8 @@ const App = () => {
   return (
     <div className="container">
       <PostForm />
-      <div className=" grid grid-cols-3 gap-4">
-        <div className="post-container col-span-2">
+      <div className=" grid grid-cols-4 gap-4">
+        <div className="post-container col-span-3">
           {!isEmpty(posts) &&
             posts.map((post, index) => {
               return <Post post={post} key={index} />;
