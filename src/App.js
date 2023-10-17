@@ -17,20 +17,20 @@ const App = () => {
 
   // Recuperer les datas
   const posts = useSelector((state) => state.postReducer);
-  const users = useSelector((state) => state.userReducer);
+  const user = useSelector((state) => state.userReducer);
   return (
-    <div>
+    <div className="text-violet">
       <h1>Extreme</h1>
       <PostForm />
-      <div className="content">
+      <div className="content line-through">
         <div className="post-container">
           {!isEmpty(posts) &&
             posts.map((post, index) => {
               return <Post post={post} key={index} />;
             })}
         </div>
-        {!isEmpty(users) &&
-          users.map((user, index) => {
+        {!isEmpty(user) &&
+          user.map((user, index) => {
             return <User user={user} key={index} />;
           })}
       </div>

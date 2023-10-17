@@ -27,20 +27,28 @@
       "content": "ddd",
       "likes": 3,
       "id": "2181413418419326161684688"
+    },
+    {
+      "title": "THIS IS NEW POST",
+      "author": "user_1",
+      "content": "THIS IS NEW CONTENT FOR NEW POST",
+      "likes": 33,
+      "id": "197255301417120592101138201"
+    },
+    {
+      "title": "dddd",
+      "author": "user_1",
+      "content": "dddd",
+      "likes": 33,
+      "id": "23516541939013819376143133"
     }
   ],
-  "users": [
+  "user": [
     {
       "pseudo": "user_1",
       "likes": 33,
       "age": 30,
       "id": 1
-    },
-    {
-      "pseudo": "user_2",
-      "likes": 0,
-      "age": 25,
-      "id": 2
     }
   ]
 }

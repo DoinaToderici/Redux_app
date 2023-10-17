@@ -1,4 +1,9 @@
-@import "./settings";
-@import "./components/post";
-@import "./components/user";
-@import "./components/postForm";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
