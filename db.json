@@ -20,12 +20,19 @@
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Recusandae quaerat vitae fugiat mollitia blanditiis, temporibus eum! Ipsum? Lorem ipsum dolor s",
       "likes": 74,
       "id": "2411781091302243715224611998"
+    },
+    {
+      "title": "new ost",
+      "author": "user_1",
+      "content": "nejhghjdgjzdffff",
+      "likes": 13,
+      "id": "19884225245786102174104210"
     }
   ],
   "user": [
     {
       "pseudo": "user_1",
-      "likes": 2,
+      "likes": 24,
       "age": 30,
       "id": 1
     }

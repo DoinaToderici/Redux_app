@@ -6,7 +6,7 @@ const EMPTY_DATA_FORM = {
   title: "",
   author: "",
   content: "",
-  likes: "",
+  likes: 0,
   id: "",
 };
 
@@ -24,7 +24,6 @@ const PostForm = () => {
     const fullDataPost = {
       ...newPost,
       author: users[0].pseudo,
-      likes: users[0].likes,
       id: getRandomNumbers(),
     };
     dispatch(addPost(fullDataPost));
